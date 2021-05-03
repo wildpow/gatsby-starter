@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Gatsby Starter",
   "author": "wildpow",
   "keywords": [
@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "prepare": "husky install"
   },
   "dependencies": {
     "gatsby": "^3.4.0",
@@ -26,5 +27,10 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "husky": "^6.0.0"
   }
 }
